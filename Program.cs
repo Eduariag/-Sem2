@@ -13,18 +13,20 @@ int newNum=CutNumber(RandNum);
 Console.WriteLine($" number {RandNum} is {newNum}");
 */
 
+
 // Показать случайное двухзначное число и показать большую цифру
 
-Int CutNumber(int num)
+int Rand (int num)
 {
     int ed=num%10;
     int ten=num/10;
 
-    ten=max;
-    if(max>ed);
+    int max=ed;
+    if(max<ten) max=ten;
     return max;
 }
-intRandNum=new Random().Next(10,100);
-int NewNum=CutNumber(RandNum);
-Console.WriteLine($" number {RandNum} is {newNum}");
+int RandNum=new Random().Next(10,100);
+int NewNum=Rand (RandNum);
+Console.WriteLine($" Random number: {RandNum} is high number: {NewNum}");
+
 
